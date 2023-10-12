@@ -18,7 +18,6 @@ while True:
         continue
     break
 
-
 while True:
     try:
         value_int_2 = int(input("Please type another number: "))
