@@ -1,7 +1,7 @@
 
 while True:
     try:
-        value_int_1 = int(input("Please type a number: "))
+        value_int_1 = float(input("Please type a number: "))
     except ValueError:
         print("It should be a number")
         continue
@@ -20,7 +20,7 @@ while True:
 
 while True:
     try:
-        value_int_2 = int(input("Please type another number: "))
+        value_int_2 = float(input("Please type another number: "))
     except ValueError:
         print("It should be a number")
         continue
