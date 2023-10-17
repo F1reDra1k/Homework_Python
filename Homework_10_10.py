@@ -1,9 +1,15 @@
+first_while = True
+input_error = "It should be a number"
+value_float_1 = 0
+value_operator = 0
+value_float_2 = 0
+
 
 while True:
     try:
         value_float_1 = float(input("Please type a number: "))
     except ValueError:
-        print("It should be a number")
+        print(input_error)
         continue
     break
 
@@ -22,7 +28,7 @@ while True:
     try:
         value_float_2 = float(input("Please type another number: "))
     except ValueError:
-        print("It should be a number")
+        print(input_error)
         continue
     break
 
@@ -39,7 +45,5 @@ elif value_operator == "4":
         result = ("You can't divide to 0")
 elif value_operator == "5":
     result = value_float_1 ** value_float_2
-
-else:print(result)
 
 print(result)
