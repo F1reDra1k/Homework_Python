@@ -10,7 +10,6 @@ def modified_calculator():
     result = 0
     desire_to_continue = 0
     forgiveness = "Good bue"
-    global_while = True
 
     while first_while:
         try:
@@ -22,7 +21,8 @@ def modified_calculator():
 
     while second_while:
         try:
-            value_operator = input("Please choose an operator: \n 1 '+'\n 2 '-'\n 3 '*'\n 4 '/' \n 5 '**'\nYour answer: ")
+            value_operator = input("Please choose an operator: \n 1 '+'\n 2 '-'\n 3 '*'"
+                                   "\n 4 '/' \n 5 '**'\nYour answer: ")
             if value_operator not in ["1", "2", "3", "4", "5"]:
                 raise ValueError
 
@@ -55,8 +55,6 @@ def modified_calculator():
 
     print(result)
 
-
-
     while fourth_while:
         try:
             desire_to_continue = input("desire to continue\nplease make a choice: \n '1' Yes \n '2' No\nYour answer:")
@@ -74,5 +72,6 @@ def modified_calculator():
         forgiveness = forgiveness
 
     print(forgiveness)
+
 
 modified_calculator()
