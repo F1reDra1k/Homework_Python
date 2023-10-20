@@ -77,6 +77,11 @@ for index in s:
 
 #print(b)
 
+for i in range(len(s)):
+    if s.find(ch, i, i+1) != -1:
+
+        print(i)
+
 # 4. Дано рядок. Замініть у цьому рядку всі появи літери `h` на літеру `H`, крім першого та останнього входження.
 
 string = "hello world how are you"
