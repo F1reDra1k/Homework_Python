@@ -4,11 +4,10 @@
 # Генерування через range або інші "фішки" можна в якості альтернативного вирішення, але спершу через цикл у циклі))
 
 my_string_1 = "0123456789"
-my_string_2 = "0123456789"
 
-for symb_int_1 in my_string_1:
-    for symb_int_2 in my_string_2:
-#         print(symb_int_1 + symb_int_2)
+for symb_int in my_string_1:
+    for symb_int_2 in my_string_1:
+         print(symb_int + symb_int_2)
 
 my_string = '0123456789'
 
@@ -18,7 +17,19 @@ for i in range(100):
         number_str += my_string[i // 10]
     number_str += my_string[i % 10]
     number = int(number_str)
-    #print(number)
+    # print(number)
+
+string = '0123456789'
+
+tens_digit = 0
+while tens_digit < 10:
+    ones_digit = 0
+    while ones_digit < 10:
+        num_str = string[tens_digit] + string[ones_digit]
+        num_int = int(num_str)
+        #print(num_int)
+        ones_digit += 1
+    tens_digit += 1
 
 ###################### Приклад ###############################
 

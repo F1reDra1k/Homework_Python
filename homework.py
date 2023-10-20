@@ -78,7 +78,7 @@ for index in s:
 #print(b)
 
 for i in range(len(s)):
-    if s.find(ch, i, i+1) != -1:
+    if s.find(ch, i, i + 1) != -1:
 
         print(i)
 
