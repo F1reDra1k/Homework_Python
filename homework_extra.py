@@ -3,11 +3,11 @@
 # Завдання потрібно виконати через цикл у циклі (див. приклад нижче) та наведення типів.
 # Генерування через range або інші "фішки" можна в якості альтернативного вирішення, але спершу через цикл у циклі))
 
-# my_string_1 = "0123456789"
-# my_string_2 = "0123456789"
+my_string_1 = "0123456789"
+my_string_2 = "0123456789"
 
-# for symb_int_1 in my_string_1:
-#     for symb_int_2 in my_string_2:
+for symb_int_1 in my_string_1:
+    for symb_int_2 in my_string_2:
 #         print(symb_int_1 + symb_int_2)
 
 my_string = '0123456789'
