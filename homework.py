@@ -69,13 +69,13 @@ my_str_space = ("Дано рядок, що складається зі слів,
 
 # s = "hello"
 # ch = "l"
-# # b = 0
-# #
-# # for index in s:
-# #     if (index == ch):
-# #         b = b + 1
-# #
-# # #print(b)
+# b = 0
+# # #
+# for index in s:
+#     if (index == ch):
+#         b = b + 1
+
+#print(b)
 # #
 # for i in range(len(s)):
 #      if s.find(ch, i, i + 1) != -1:
@@ -84,17 +84,17 @@ my_str_space = ("Дано рядок, що складається зі слів,
 
 # 4. Дано рядок. Замініть у цьому рядку всі появи літери `h` на літеру `H`, крім першого та останнього входження.
 
-string = "hello world how are you"
-first_h = string.index('h')
-last_h = string.rindex('h')
-
-new_string = ''
-for i in range(len(string)):
-    if i == first_h or i == last_h:
-        new_string += string[i]
-    elif string[i] == 'h':
-        new_string += 'H'
-    else:
-        new_string += string[i]
-
-#print(new_string)
+# string = "hello world how are you"
+# first_h = string.index('h')
+# last_h = string.rindex('h')
+#
+# new_string = ''
+# for i in range(len(string)):
+#     if i == first_h or i == last_h:
+#         new_string += string[i]
+#     elif string[i] == 'h':
+#         new_string += 'H'
+#     else:
+#         new_string += string[i]
+#
+# print(new_string)
