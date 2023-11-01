@@ -83,6 +83,7 @@
 #
 # total_age = 0
 # count = 0
+#
 # for person in people:
 #     total_age += person["age"]
 #     count += 1

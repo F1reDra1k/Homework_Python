@@ -64,7 +64,7 @@
 # my_list = [2, 4, 1, 5, 3, 9, 0, 7, 1]
 # result = 0
 #
-# for i in range(len(my_list) - 1):
+# for i in range(1, len(my_list) - 1):
 #     if my_list[i] > my_list[i - 1] + my_list[i + 1]:
 #         result += 1
 #
@@ -88,7 +88,7 @@
 # my_str = "hello"
 # my_list = []
 #
-# for s in my_str:
+# for s in set(my_str):
 #     if my_str.count(s) == 1:
 #         my_list.append(s)
 # print(my_list)
