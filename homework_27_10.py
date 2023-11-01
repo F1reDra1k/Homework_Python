@@ -39,14 +39,17 @@
 # а) Створити список і помістити туди ім'я наймолодшої людини. Якщо вік збігається – помістити всі імена наймолодших.
 
 # people = [
-#     {"name": "John", "age": 5},
+#     {"name": "John", "age": 15},
 #     {"name": "Kris", "age": 20},
 #     {"name": "Bob", "age": 25},
 #     {"name": "Zed", "age": 5}
 # ]
 # young_people =[]
+# min_age = people[0]["age"]
 #
-# min_age = min(person["age"] for person in people)
+# for person in people:
+#     if person["age"] < min_age:
+#         min_age = person["age"]
 #
 # for person in people:
 #     if person["age"] == min_age:
@@ -64,7 +67,11 @@
 # ]
 # leng_name_people =[]
 #
-# max_len = max(len(person["name"]) for person in people)
+# max_len = len(people[0]["name"])
+# for person in people:
+#     if len(person["name"]) < max_len:
+#         min_age = person["name"]
+#
 # print(max_len)
 # for person in people:
 #     if len(person["name"]) == max_len:
