@@ -50,7 +50,7 @@
 # for person in people:
 #     if person["age"] < min_age:
 #         min_age = person["age"]
-#
+
 # for person in people:
 #     if person["age"] == min_age:
 #         young_people.append(person["name"])
