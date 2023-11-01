@@ -101,10 +101,93 @@
 
 # 5) Дано два словники my_dict_1 і my_dict_2.
 # а) Створити список із ключів, які є в обох словниках.
+
+# my_dict_1 = {
+#     "name11": "John", "age11": 5,
+#     "name2": "Kris", "age2": 20,
+#     "name3": "Bob", "age3": 25,
+#     "name": "Zed", "age": 5
+# }
+# my_dict_2 = {
+#     "name1": "John", "age1": 5,
+#     "name2": "Kris", "age2": 20,
+#     "name3": "Bob", "age3": 25,
+#     "name": "Zed", "age": 5
+# }
+# my_list = []
+#
+# for key in my_dict_1.keys():
+#     if key in my_dict_2:
+#         my_list.append(key)
+#
+# print(my_list)
+#
 # б) Створити список із ключів, які є у першому, але немає у другому словнику.
+# my_dict_1 = {
+#     "name11": "John", "age11": 5,
+#     "name2": "Kris", "age2": 20,
+#     "name3": "Bob", "age3": 25,
+#     "name": "Zed", "age": 5
+# }
+# my_dict_2 = {
+#     "name1": "John", "age1": 5,
+#     "name2": "Kris", "age2": 20,
+#     "name3": "Bob", "age3": 25,
+#     "name": "Zed", "age": 5
+# }
+#
+# my_list = list(set(my_dict_1.keys()) - set(my_dict_2.keys()))
+#
+#
+# print(my_list)
+#
 # в) Створити новий словник з пар {ключ:значення} для ключів, які є в першому, але немає в другому словнику.
+
+# my_dict_1 = {
+#     "name11": "John", "age11": 5,
+#     "name2": "Kris", "age2": 20,
+#     "name3": "Bob", "age3": 25,
+#     "name": "Zed", "age": 5
+# }
+# my_dict_2 = {
+#     "name11": "John", "age1": 5,
+#     "name2": "Kris", "age2": 20,
+#     "name3": "Bob", "age3": 25,
+#     "name": "Zed", "age": 5
+# }
+# new_dict = {}
+#
+# for key in my_dict_1:
+#     if key not in my_dict_2:
+#         new_dict[key] = my_dict_1[key]
+# print(new_dict)
+
 # г) Об'єднати ці два словники у новий словник за правилом:
 # якщо ключ є тільки в одному з двох словників - помістити пару ключ: значення,
 # якщо ключ є у двох словниках - помістити пару {ключ: [значення_з_першого_словника, значення_з_другого_словника]},
 #
 # {1:1, 2:2}, {11:11, 2:22} ---> {1:1, 11:11, 2:[2, 22]}
+#
+#
+# my_dict_1 = {
+#     "name1": "Kris", "age": 20,
+#
+# }
+# my_dict_2 = {
+#     "name2": "Kim", "age": 25,
+# }
+# new_dict = {}
+#
+# for key, value in my_dict_1.items():
+#     if key not in my_dict_2:
+#         new_dict[key] = value
+#
+# for key, value in my_dict_2.items():
+#     if key not in my_dict_1:
+#         new_dict[key] = value
+#
+# for key in my_dict_1.keys():
+#     if key in my_dict_2:
+#         new_dict[key] = [my_dict_1[key], my_dict_2[key]]
+#
+# print(new_dict)
