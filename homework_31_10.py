@@ -5,13 +5,13 @@
 # Якщо рядок стоїть на непарному місці my_list, то його замінити на перевернутий рядок. "qwe" на "ewq".
 # Якщо на парному – залишити без зміни.
 
-# def Creation_new_list(my_list):
+# def Creation_new_list(obj_list):
 #     new_list = []
-#     for i in range(len(my_list)):
+#     for i in range(len(obj_list)):
 #         if i % 2 != 0:
-#             new_list.append(my_list[i][::-1])
+#             new_list.append(obj_list[i][::-1])
 #         else:
-#            new_list.append(my_list[i])
+#            new_list.append(obj_list[i])
 #
 #     return new_list
 #
@@ -22,18 +22,19 @@
 # 2. Написати функцію яка приймає один параметр – список рядків my_list.
 # Функція повертає новий список у якому міститься елементи my_list у яких перший символ - буква "a".
 
-# def list_first_character(my_list):
+# def list_first_character(obj_list):
 #     new_list = []
-#     for i in my_list:
+#     for i in obj_list:
 #         if i.startswith('a'):
 #             new_list.append(i)
 #
 #     return new_list
 #
-# my_list = ["aqwe", "aty", "uio", "asd", "ggh"]
+# my_list = ["aqwe", "aty", "asd", "uio", "ggh"]
 #
 # char_list = list_first_character(my_list)
 # print(char_list)
+
 #
 # 3. Написати функцію яка приймає один параметр – список рядків my_list.
 # Функція повертає новий список у якому міститься елементи з my_list, у яких є символ - буква "a" на будь-якому місці.
