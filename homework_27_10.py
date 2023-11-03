@@ -75,7 +75,7 @@
 # print(max_len)
 # for person in people:
 #     if len(person["name"]) == max_len:
-#         leng_name_people.append(person["name"])
+#         lens_name_people.append(person["name"])
 #
 # print(leng_name_people)
 
